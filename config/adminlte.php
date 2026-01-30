@@ -312,6 +312,11 @@ return [
 
         // Sidebar items:
         [
+            'text' => 'التصنيفات',
+            'url'  => 'admin/categories',
+            'icon' => 'fas fa-tags',
+        ],
+        [
             'text' => 'المدونة',
             'icon' => 'fas fa-blog',
             'submenu' => [
@@ -328,11 +333,7 @@ return [
             ],
 
         ],
-        [
-            'text' => 'التصنيفات',
-            'url'  => 'admin/categories',
-            'icon' => 'fas fa-tags',
-        ],
+
 
     ],
 
