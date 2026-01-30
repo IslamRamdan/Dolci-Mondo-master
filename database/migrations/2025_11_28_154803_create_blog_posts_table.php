@@ -25,10 +25,8 @@ return new class extends Migration
             $table->string('wholesale_price', 10, 2); // سعر الجملة
             $table->string('sale_price', 10, 2);      // سعر البيع
 
-            $table->foreignId('category_id')
-                ->after('id')
-                ->constrained('categories')
-                ->cascadeOnDelete();
+            $table->bigInteger('category_id')->unsigned();
+
             $table->timestamps();
         });
     }
